@@ -8,14 +8,14 @@
     <ContentPage.Content>
         <Frame BorderColor="Gray" HasShadow="True" CornerRadius="5" Margin="8">
             <StackLayout>
-                <Label Text="Title:" FontSize="Medium"/>
+                <Label Text="Заголовок:" FontSize="Medium"/>
                 <Label HorizontalOptions="Fill" Text="{Binding Title}" />
                 <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="Fill" />
-                <Label Text="Text:" FontSize="Medium"/>
+                <Label Text="Текст:" FontSize="Medium"/>
                 <Label Text="{Binding Text}" />
                 <BoxView Color="Gray" HeightRequest="1" HorizontalOptions="Fill" />
 
-                <Button Text="Go back" Command="{Binding ListViewModel.GoBackCommand}" FontSize="Medium" CornerRadius="5" />
+                <Button Text="Назад" Command="{Binding ListViewModel.GoBackCommand}" FontSize="Medium" CornerRadius="5" />
 
             </StackLayout>
         </Frame>

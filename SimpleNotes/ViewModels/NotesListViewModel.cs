@@ -84,7 +84,7 @@ namespace SimpleNotes.ViewModels
             NoteViewModel nv = new NoteViewModel();
             NoteView = nv;
             DateTime date = DateTime.Now;
-            string dateString = $"Created: {date.Day}/{date.Month}/{date.Year} {date.Hour}:{date.Minute}";
+            string dateString = $"Создана: {date.Day}/{date.Month}/{date.Year} {date.Hour}:{date.Minute}";
             NoteView.CreationData = dateString;
             Notes.Add(nv);
             NoteView.ListViewModel = this;
@@ -95,7 +95,7 @@ namespace SimpleNotes.ViewModels
         {
             NoteView = (NoteViewModel)obj;
             DateTime date = DateTime.Now;
-            string dateString = $"Created: {date.Day}/{date.Month}/{date.Year} {date.Hour}:{date.Minute}";
+            string dateString = $"Создана: {date.Day}/{date.Month}/{date.Year} {date.Hour}:{date.Minute}";
             NoteView.CreationData = dateString;
             NoteView.ListViewModel = this;
             Navigation.PushAsync(new NotePage(NoteView));
